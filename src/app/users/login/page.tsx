@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import axios from "axios";
 
 interface Signin {
   email: string;
@@ -11,8 +12,9 @@ const page = () => {
     email: "",
     password: "",
   });
-  function submitHandler(){
-    console.log(data)
+  async function submitHandler(){
+    await axios.post('/api/user/login',data)
+    .then((res)=>console.log(res.data))
   }
   return (
     <div className="flex justify-center items-center h-screen">

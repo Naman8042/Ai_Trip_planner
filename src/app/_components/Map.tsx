@@ -84,7 +84,7 @@ const Map = ({ data, selectedDayIndex }: Daylistdata) => {
   const selectedDayPolyline = selectedDayIndex !== null ? data.itinerary[selectedDayIndex].places.map(place => place.geo_coordinates) : [];
 
   return (
-    <MapContainer center={[28.6448, 77.2090]} zoom={13} style={{ height: '100%', width: '100%' }}>
+      <MapContainer center={[28.6448, 77.2090]} zoom={13} style={{ height: '100%', width: '100%' }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -112,7 +112,6 @@ const Map = ({ data, selectedDayIndex }: Daylistdata) => {
           />
       )} */}
     </MapContainer>
-    // <></>
   );
 };
 

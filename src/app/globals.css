@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 *{
-    height: min-content;
-    overflow-x: hidden;
-    overflow-y: auto;
+    /* width: 100vh; */
+    /* height: max-content; */
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
 }
 :root {
     --secondary:#84cc16; 

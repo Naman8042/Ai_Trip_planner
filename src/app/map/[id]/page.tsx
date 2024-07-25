@@ -60,13 +60,13 @@ const Page: React.FC = () => {
   }, []);
 
   return (
-    <div className='flex w-full h-screen overflow-hidden top-15 fixed'>
-      <div className='w-1/2 h-[90%] overflow-y-auto'>
+    <div className='flex w-full h-screen overflow-hidden absolute top-[8%]'>
+      <div className='w-1/2 overflow-y-auto '>
         <Profile />
         <DayList data={data} selectedDayIndex={selectedDayIndex} setSelectedDayIndex={setSelectedDayIndex} />
       </div>
 
-      <div className='w-1/2 h-[92%] overflow-hidden'>
+      <div className='w-1/2  overflow-hidden'>
         <Map data={data} selectedDayIndex={selectedDayIndex} />
       </div>
     </div>
