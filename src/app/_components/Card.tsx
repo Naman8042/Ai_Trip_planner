@@ -31,7 +31,7 @@ const Card = ({ DayData,color}:Daylistdata) => {
   let day = 1;
   const handleClick = (latitude:number,longitude:number) => {
     const googleMapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
-    window.open(googleMapsUrl, '_blank');
+    // window.open(googleMapsUrl, '_blank');
   };
   const colors = ["#e879f9", "#fb923c", "#84cc16", "brown", "#9400D3", "#1E90FF", "#FFD700", "#708090"];
 

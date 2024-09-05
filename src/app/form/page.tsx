@@ -35,7 +35,7 @@ const Page = () => {
 
   return (
     <div className="flex justify-center items-center flex-col my-1">
-      <div className='md:w-[35%] md:bg-white w-[90%]'>
+      <div className='md:w-[550px] md:bg-white w-[90%]'>
         <h1 className='text-center text-3xl my-16'>Plan Your Next Adventure</h1>
         <h2 className="text-lg my-4">Where do you want to go?</h2>
         <input
